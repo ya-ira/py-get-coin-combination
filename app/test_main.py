@@ -28,11 +28,13 @@ def test_check_one_type(coins: int, result: list[int]) -> None:
     "coins,result",
     [
         (6, [1, 1, 0, 0]),
-        (17, [2, 1, 1, 0])
+        (17, [2, 1, 1, 0]),
+        (41, [1, 1, 1, 1])
     ],
     ids=[
         "1 penny + 1 nickel",
-        "2 pennies + 1 nickel + 1 dime"
+        "2 pennies + 1 nickel + 1 dime",
+        "1 quarter + 1 penny + 1 nickel + 1 dime"
     ]
 )
 def test_check_multiple_types_at_same_time(
